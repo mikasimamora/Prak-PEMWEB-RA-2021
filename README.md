@@ -1,4 +1,4 @@
 # Prak-PEMWEB-RA-2021
+Nama  : Mika Simamora
 
-Masukkan nama anda disini dengan format :
-Nama - NIM
+NIM   : 119140085
