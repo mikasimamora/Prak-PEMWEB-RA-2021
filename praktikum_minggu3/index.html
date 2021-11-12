@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Praktikum Minggu3</title>
+</head>
+<body>
+    <p>Select theme : 
+        <select id="tema" onclick="tema_saya()">
+        <option value="coral">coral</option>
+		<option value="purple">purple</option>
+        <option value="pink">pink</option>
+        </select>
+    </p>
+
+    <h1>This is my website</h1>
+
+    <p>Select the season type today :
+        <select id="musim" onclick="season()">
+        <option value="kemarau">Kemarau</option>
+		<option value="hujan">Hujan</option>
+		<option value="semi">Semi</option>
+        </select>
+    </p>
+    <p id="teks"></p>
+
+    <p>Input number :
+        <input type="number" id="angka">
+        <input type="submit" value="Get Factorial" onclick="faktorial()">
+    </p>
+    <p id="teks2"></p>
+
+    <script type="text/javascript">
+        function tema_saya() {
+            var Tema = document.getElementById('tema').value;
+            if (Tema == "coral") {
+                document.body.style.background = "coral";
+                document.body.style.color = "black";
+            } else if (Tema == "purple") {
+                document.body.style.background = "purple";
+                document.body.style.color = "white";
+            } else {
+                document.body.style.background = "pink";
+                document.body.style.color = "black";
+            }
+        }
+
+        function season() {
+            var musim = document.getElementById("musim").value;
+
+            var tulisan = "";
+            if (musim == "kemarau") {
+                tulisan = "Perbanyak minum air putih. Jangan sampe kekurangan cairan";
+            } else if (musim == "hujan") {
+                tulisan = "Langit sedang bersedih. Mari menggalau bersama";
+            } else if (musim == "semi") {
+                tulisan = "Suuueenaaaanggggg polllll";
+            }
+            document.getElementById("teks").innerHTML = tulisan;
+
+            }
+            function faktorial() {
+            var angka = document.getElementById("angka").value;
+            var hasil = 1;
+
+            var i = angka;
+            while (i != 0) {
+                hasil = hasil * i;
+                i--;
+            }
+
+            var tulisan = "The factorial of " + angka + " is " + hasil;
+            document.getElementById("teks2").innerHTML = tulisan;
+        }
+        </script>
+</body>
+</html>
