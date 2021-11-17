@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px 5px #101a12;
+  }
+  
+  body {
+    background-color: #eb9efa;
+    color: #08220d;
+  }
+  
+  .navbar {
+    background-color: #a5569a;
+    overflow: hidden;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 10px 20px #101a12;
+  }
+  .navbar nav {
+    float: left;
+  }
+  .navbar nav a {
+    display: inline-block;
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .navbar nav a:hover {
+    background-color: white;
+    color: #ca51b0;
+  }
+  
+  .badan {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 900px auto;
+  }
+  .badan .slide {
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .badan .slide table {
+    width: 90%;
+  }
+  .badan .slide table th, .badan .slide table td {
+    background-color: #b563c0;
+    color: white;
+  }
+  .badan .slide input {
+    width: 100%;
+  }

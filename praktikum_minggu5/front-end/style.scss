@@ -1,0 +1,64 @@
+$bentuk : 10px;
+$comp_warna : #f370c7;
+$bg_warna : #ec8fdd;
+$shadow_warna : #101a12;
+$warna : #08220d;
+$dist : white;
+
+* {
+    margin : 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px 5px $shadow_warna;
+}
+
+body {
+    background-color: $bg_warna;
+    color: $warna;
+}
+
+.navbar {
+    background-color: $comp_warna;
+    overflow: hidden;
+    border-radius: 0px 0px $bentuk $bentuk;
+    box-shadow: 0px 10px 20px $shadow_warna;
+    nav {
+        float: left;
+        a {
+            display: inline-block;
+            color: $dist;
+            padding: 20px 20px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        a:hover {
+            background-color: $dist;
+            color: $comp_warna;
+        }
+    }
+}
+
+.badan {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 900px auto;
+
+    .slide {
+        padding: 5px;
+        font-size: 20px;
+        text-align: center;
+
+        table {
+            width: 90%;
+            th, td {
+                background-color: $comp_warna;
+                color: $dist;
+            }
+        }
+
+        input {
+            width: 100%;
+        }
+    }
+}
